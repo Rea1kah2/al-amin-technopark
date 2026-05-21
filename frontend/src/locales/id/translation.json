@@ -1,0 +1,115 @@
+{
+    "nav": {
+        "beranda": "Beranda",
+        "tentang": "Tentang Kami",
+        "peta": "Peta Kawasan",
+        "fasilitas": "Fasilitas",
+        "berita": "Berita",
+        "kontak": "Kontak",
+        "jelajahi": "Jelajahi 360°"
+    },
+    "hero": {
+        "tag": "INOVASI • KOLABORASI • KEBERLANJUTAN",
+        "judul": "Membangun Masa Depan Bersama Al Amin Techno Park",
+        "deskripsi": "Panca Budi Al Amin Techno Park merupakan kawasan inovasi, teknologi, dan pendidikan yang mendukung pengembangan masa depan.",
+        "btnKawasan": "Jelajahi Kawasan",
+        "btnVideo": "Tonton Video",
+        "judulAwal": "Membangun Masa Depan Bersama",
+        "judulAksen": "Al Amin Technopark"
+    },
+    "zona": {
+        "judul": "Zona Kawasan",
+        "z1": "Zona Penerimaan, Sport Centre, Dan Rusunawa",
+        "z2": "Zona Pengolahan Produk Dan Market Place",
+        "z3": "Zona Plaza Utama Dan Kantor Pengelola Kawasan",
+        "z4": "Zona Pertanian Dan Perkebunan",
+        "z5": "Zona Peternakan",
+        "z6": "Zona Wisata Alam Dan Outdoor Recreation",
+        "z7": "Zona Service",
+        "z8": "Zona Masjid Al-Amin"
+    },
+    "virtualTour": {
+        "tag": "JELAJAHI KAWASAN",
+        "judul": "Virtual Tour",
+        "deskripsi": "Rasakan pengalaman Menjalajahi Al Amin Techno Park Secara Virtual",
+        "btn": "Mulai Jelajah 360°",
+        "judulAwal": "Tur",
+        "judulAksen": "Virtual",
+        "stat1": "Zona Kawasan",
+        "stat2": "Virtual Experience",
+        "stat3": "Hektar Lahan",
+        "stat4": "Akses Informasi"
+    },
+    "tentang": {
+        "judul": "Tentang Al Amin Techno Park",
+        "deskripsi": "Al Amin Techno Park adalah kawasan terintegrasi yang berfokus pada pengembangan inovasi, riset, pendidikan, dan kolaborasi antar industri, akademisi, dan masyarakat.",
+        "visi": "Visi",
+        "misi": "Misi",
+        "visiText": "Menjadi pusat inovasi dan pendidikan unggulan yang berdaya saing global dan berkontribusi bagi kemajuan bangsa.",
+        "nilaiKami": "NILAI KAMI",
+        "sejarah": "SEJARAH SINGKAT",
+        "perjalanan": "Perjalanan Al Amin Techno Park"
+    },
+    "fasilitas": {
+        "judul": "Fasilitas Al Amin Techno Park",
+        "subjudul": "Sebagai Sarana Dukung",
+        "deskripsi": "Berbagai fasilitas di Al Amin Techno Park yang dapat kamu manfaatkan untuk mendukung pengembangan riset, inovasi, dan pengalaman belajar praktis.",
+        "akses": "Akses Fasilitas"
+    },
+    "berita": {
+        "judul": "Membangun Masa Depan Bersama Al Amin Techno Park",
+        "deskripsi": "Panca Budi Al Amin Techno Park merupakan kawasan inovasi, teknologi, dan pendidikan yang mendukung pengembangan masa depan.",
+        "semua": "Semua",
+        "cari": "Cari Berita...",
+        "baca": "Baca Selengkapnya",
+        "oleh": "oleh"
+    },
+    "kontak": {
+        "judul": "KONTAK",
+        "subjudul": "Hubungi Kami",
+        "lokasi": "Lokasi",
+        "email": "Email",
+        "telepon": "Telepon",
+        "alamat": "Jl. Berdikari Dusun 3 no 200 Buluhnipes, Sampe Cita, Kec. Kutalimbaru, Kabupaten Deli Serdang, Sumatera Utara 20354",
+        "hubungiKami": "Hubungi Kami",
+        "lokasiKami": "Lokasi Kami",
+        "temukanKamiDi": "Temukan Kami Di",
+        "alamatNama": "Al-Amin Technopark",
+        "alamatDetail": "Jl. Berdikari Dusun 3 no 200 Buluhnipes, Sampe Cita, Kec. Kutalimbaru, Deli Serdang, North Sumatra 20354",
+        "form": {
+            "judulPesan": "Kirim",
+            "judulPesanAksen": "Pesan",
+            "nama": "Nama",
+            "namaPlaceholder": "Nama lengkap",
+            "telepon": "Telepon",
+            "teleponPlaceholder": "08xxxxxxxxxx",
+            "email": "Email",
+            "emailPlaceholder": "email@contoh.com",
+            "subjek": "Subjek",
+            "subjekPlaceholder": "Subjek pesan Anda",
+            "pesan": "Pesan",
+            "pesanPlaceholder": "Tulis pesan Anda di sini...",
+            "kirim": "Kirim Pesan"
+        },
+        "map": {
+            "judul": "Temukan",
+            "judulAksen": "Kami"
+        }
+    },
+    "peta": {
+        "judul": "Science Techno Park (STP) Al-Amin",
+        "selengkapnya": "Selengkapnya"
+    },
+    "footer": {
+        "ikuti": "Ikuti Kami",
+        "deskripsi": "Kawasan inovasi, teknologi, dan pendidikan terpadu di Sumatera Utara.",
+        "navigasi": "Navigasi",
+        "kontak": "Kontak",
+        "hak": "Hak Cipta Dilindungi",
+        "nav": {
+            "beranda": "Beranda", "tentang": "Tentang Kami",
+            "peta": "Peta Kawasan", "jelajahi": "Jelajahi 360°",
+            "berita": "Berita", "fasilitas": "Fasilitas", "kontak": "Kontak"
+        }
+    }        
+}

@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.local
+
+# Build output
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Uploads folder
+backend/uploads/
+
+# Setup file (berisi credentials)
+SETUP.md
+
+frontend/public/videos/
+
+frontend/public/images/*.mp4

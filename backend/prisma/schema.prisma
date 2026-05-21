@@ -1,0 +1,55 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Admin {
+  id        Int      @id @default(autoincrement())
+  nama      String
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  nama      String
+  email     String   @unique
+  password  String
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Berita {
+  id          Int      @id @default(autoincrement())
+  judul       String
+  judulEn     String
+  slug        String   @unique
+  konten      String   @db.Text
+  kontenEn    String   @db.Text
+  gambar      String?
+  kategori    String   @default("Kegiatan")
+  penulis     String   @default("Al Amin Techno Park")
+  diterbitkan Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Fasilitas {
+  id          Int      @id @default(autoincrement())
+  nama        String
+  namaEn      String
+  deskripsi   String   @db.Text
+  deskripsiEn String   @db.Text
+  gambar      String?
+  icon        String?
+  urutan      Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

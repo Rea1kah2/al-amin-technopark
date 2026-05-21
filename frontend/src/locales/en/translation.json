@@ -1,0 +1,116 @@
+{
+  "nav": {
+    "beranda": "Home",
+    "tentang": "About Us",
+    "peta": "Area Map",
+    "fasilitas": "Facilities",
+    "berita": "News",
+    "kontak": "Contact",
+    "jelajahi": "Explore 360°"
+  },
+  "hero": {
+    "tag": "INNOVATION • COLLABORATION • SUSTAINABILITY",
+    "judul": "Building the Future Together with Al Amin Techno Park",
+    "deskripsi": "Panca Budi Al Amin Techno Park is an innovation, technology, and education hub supporting future development.",
+    "btnKawasan": "Explore Area",
+    "btnVideo": "Watch Video",
+    "judulAwal": "Building the Future Together with",
+    "judulAksen": "Al Amin Technopark"
+
+  },
+  "zona": {
+    "judul": "Area Zones",
+    "z1": "Reception, Sport Centre & Rusunawa Zone",
+    "z2": "Product Processing & Market Place Zone",
+    "z3": "Main Plaza & Area Management Office Zone",
+    "z4": "Agriculture & Plantation Zone",
+    "z5": "Livestock Zone",
+    "z6": "Nature Tourism & Outdoor Recreation Zone",
+    "z7": "Service Zone",
+    "z8": "Al-Amin Mosque Zone"
+  },
+  "virtualTour": {
+    "tag": "EXPLORE THE AREA",
+    "judul": "Virtual Tour",
+    "deskripsi": "Experience exploring Al Amin Techno Park virtually",
+    "btn": "Start 360° Explore",
+    "judulAwal": "Virtual",
+    "judulAksen": "Tour",
+    "stat1": "Zones",
+    "stat2": "Virtual Experience",
+    "stat3": "Hectares of Land",
+    "stat4": "24/7 Access"
+  },
+  "tentang": {
+    "judul": "About Al Amin Techno Park",
+    "deskripsi": "Al Amin Techno Park is an integrated area focused on innovation, research, education, and collaboration between industry, academics, and the community.",
+    "visi": "Vision",
+    "misi": "Mission",
+    "visiText": "To become a world-class innovation and education center contributing to national progress.",
+    "nilaiKami": "OUR VALUES",
+    "sejarah": "BRIEF HISTORY",
+    "perjalanan": "Al Amin Techno Park Journey"
+  },
+  "fasilitas": {
+    "judul": "Al Amin Techno Park Facilities",
+    "subjudul": "As Supporting Facilities",
+    "deskripsi": "Various facilities at Al Amin Techno Park that you can utilize to support research development, innovation, and practical learning experiences.",
+    "akses": "Access Facilities"
+  },
+  "berita": {
+    "judul": "Building the Future with Al Amin Techno Park",
+    "deskripsi": "Panca Budi Al Amin Techno Park is an innovation, technology, and education hub supporting future development.",
+    "semua": "All",
+    "cari": "Search News...",
+    "baca": "Read More",
+    "oleh": "by"
+  },
+  "kontak": {
+    "judul": "CONTACT",
+    "subjudul": "Contact Us",
+    "lokasi": "Location",
+    "email": "Email",
+    "telepon": "Phone",
+    "alamat": "Jl. Berdikari Dusun 3 no 200 Buluhnipes, Sampe Cita, Kec. Kutalimbaru, Deli Serdang Regency, North Sumatra 20354",
+    "hubungiKami": "Get In Touch",
+    "lokasiKami": "Our Location",
+    "temukanKamiDi": "Find Us On",
+    "alamatNama": "Al-Amin Technopark",
+    "alamatDetail": "Jl. Berdikari Dusun 3 no 200 Buluhnipes, Sampe Cita, Kec. Kutalimbaru, Deli Serdang, North Sumatra 20354",
+    "form": {
+      "judulPesan": "Send Us a",
+      "judulPesanAksen": "Message",
+      "nama": "Name",
+      "namaPlaceholder": "Your full name",
+      "telepon": "Phone",
+      "teleponPlaceholder": "+62xxxxxxxxxx",
+      "email": "Email",
+      "emailPlaceholder": "email@example.com",
+      "subjek": "Subject",
+      "subjekPlaceholder": "Subject of your message",
+      "pesan": "Message",
+      "pesanPlaceholder": "Write your message here...",
+      "kirim": "Send Message"
+    },
+    "map": {
+      "judul": "Find",
+      "judulAksen": "Us"
+    }
+  },
+  "peta": {
+    "judul": "Science Techno Park (STP) Al-Amin",
+    "selengkapnya": "See More"
+  },
+  "footer": {
+    "ikuti": "Follow Us",
+    "deskripsi": "An integrated innovation, technology, and education hub in North Sumatra.",
+    "navigasi": "Navigation",
+    "kontak": "Contact",
+    "hak": "All Rights Reserved",
+    "nav": {
+      "beranda": "Home", "tentang": "About Us",
+      "peta": "Area Map", "jelajahi": "Explore 360°",
+      "berita": "News", "fasilitas": "Facilities", "kontak": "Contact"
+    }
+  }
+}
