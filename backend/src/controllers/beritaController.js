@@ -1,4 +1,5 @@
 const prisma = require('../config/prisma');
+const { streamUpload } = require('../config/cloudinary');
 
 const slugify = (text) => {
   return text.toLowerCase()
@@ -46,24 +47,21 @@ const getAllBeritaAdmin = async (req, res) => {
 
 const createBerita = async (req, res) => {
   try {
-    const { judul, konten, kategori, penulis, diterbitkan } = req.body;
+    const { judul, judulEn, konten, kontenEn, kategori, penulis, diterbitkan } = req.body;
     let gambar = null;
 
     if (req.file) {
-      const cloudinary = require('../config/cloudinary');
-      const result = await cloudinary.uploader.upload(req.file.path, {
-        folder: 'alamin-berita'
-      });
+      const result = await streamUpload(req.file.buffer, 'alamin-berita');
       gambar = result.secure_url;
     }
 
     const berita = await prisma.berita.create({
       data: {
         judul,
-        judulEn: judul,         
+        judulEn: judulEn || judul,
         slug: slugify(judul),
         konten,
-        kontenEn: konten,        
+        kontenEn: kontenEn || konten,
         kategori: kategori || 'Kegiatan',
         penulis: penulis || 'Al Amin Techno Park',
         diterbitkan: diterbitkan === 'true',
@@ -72,29 +70,25 @@ const createBerita = async (req, res) => {
     });
     res.status(201).json(berita);
   } catch (err) {
-    console.error('CREATE BERITA ERROR:', err);
     res.status(500).json({ message: err.message });
   }
 };
 
 const updateBerita = async (req, res) => {
   try {
-    const { judul, konten, kategori, penulis, diterbitkan } = req.body;
+    const { judul, judulEn, konten, kontenEn, kategori, penulis, diterbitkan } = req.body;
     const data = {
       judul,
-      judulEn: judul,           
+      judulEn: judulEn || judul,
       konten,
-      kontenEn: konten,     
+      kontenEn: kontenEn || konten,
       kategori,
       penulis,
       diterbitkan: diterbitkan === 'true'
     };
 
     if (req.file) {
-      const cloudinary = require('../config/cloudinary');
-      const result = await cloudinary.uploader.upload(req.file.path, {
-        folder: 'alamin-berita'
-      });
+      const result = await streamUpload(req.file.buffer, 'alamin-berita');
       data.gambar = result.secure_url;
     }
 
@@ -104,7 +98,6 @@ const updateBerita = async (req, res) => {
     });
     res.json(berita);
   } catch (err) {
-    console.error('UPDATE BERITA ERROR:', err);
     res.status(500).json({ message: err.message });
   }
 };

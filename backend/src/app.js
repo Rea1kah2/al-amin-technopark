@@ -6,6 +6,7 @@ const authRoutes = require('./routes/authRoutes');
 const userRoutes = require('./routes/userRoutes');
 const beritaRoutes = require('./routes/beritaRoutes');
 const fasilitasRoutes = require('./routes/fasilitasRoutes');
+const translateRoutes = require('./routes/translateRoutes');
 
 const app = express();
 
@@ -22,6 +23,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/berita', beritaRoutes);
 app.use('/api/fasilitas', fasilitasRoutes);
+app.use('/api/translate', translateRoutes);
 
 app.use((err, req, res, next) => {
   console.error(err.stack);
@@ -29,6 +31,10 @@ app.use((err, req, res, next) => {
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server berjalan di port ${PORT}`));
+
+// Jangan listen di Vercel (serverless), hanya saat development lokal
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => console.log(`Server berjalan di port ${PORT}`));
+}
 
 module.exports = app;

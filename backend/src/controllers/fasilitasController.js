@@ -1,4 +1,5 @@
 const prisma = require('../config/prisma');
+const { streamUpload } = require('../config/cloudinary');
 
 const getAllFasilitas = async (req, res) => {
   try {
@@ -11,23 +12,20 @@ const getAllFasilitas = async (req, res) => {
 
 const createFasilitas = async (req, res) => {
   try {
-    const { nama, deskripsi, icon, urutan } = req.body;
+    const { nama, namaEn, deskripsi, deskripsiEn, icon, urutan } = req.body;
     let gambar = null;
 
     if (req.file) {
-      const cloudinary = require('../config/cloudinary');
-      const result = await cloudinary.uploader.upload(req.file.path, {
-        folder: 'alamin-fasilitas'
-      });
+      const result = await streamUpload(req.file.buffer, 'alamin-fasilitas');
       gambar = result.secure_url;
     }
 
     const fasilitas = await prisma.fasilitas.create({
       data: {
         nama,
-        namaEn: nama,             
+        namaEn: namaEn || nama,
         deskripsi,
-        deskripsiEn: deskripsi,  
+        deskripsiEn: deskripsiEn || deskripsi,
         gambar,
         icon: icon || '',
         urutan: Number(urutan) || 0
@@ -35,28 +33,24 @@ const createFasilitas = async (req, res) => {
     });
     res.status(201).json(fasilitas);
   } catch (err) {
-    console.error('CREATE FASILITAS ERROR:', err); 
     res.status(500).json({ message: err.message });
   }
 };
 
 const updateFasilitas = async (req, res) => {
   try {
-    const { nama, deskripsi, icon, urutan } = req.body;
+    const { nama, namaEn, deskripsi, deskripsiEn, icon, urutan } = req.body;
     const data = {
       nama,
-      namaEn: nama,              
+      namaEn: namaEn || nama,
       deskripsi,
-      deskripsiEn: deskripsi,   
+      deskripsiEn: deskripsiEn || deskripsi,
       icon: icon || '',
       urutan: Number(urutan) || 0
     };
 
     if (req.file) {
-      const cloudinary = require('../config/cloudinary');
-      const result = await cloudinary.uploader.upload(req.file.path, {
-        folder: 'alamin-fasilitas'
-      });
+      const result = await streamUpload(req.file.buffer, 'alamin-fasilitas');
       data.gambar = result.secure_url;
     }
 
@@ -66,7 +60,6 @@ const updateFasilitas = async (req, res) => {
     });
     res.json(fasilitas);
   } catch (err) {
-    console.error('UPDATE FASILITAS ERROR:', err); 
     res.status(500).json({ message: err.message });
   }
 };
