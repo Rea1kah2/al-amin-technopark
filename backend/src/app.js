@@ -44,4 +44,4 @@ if (!process.env.VERCEL) {
   app.listen(PORT, () => console.log(`Server berjalan di port ${PORT}`));
 }
 
-module.exports = app;
+module.exports = app;// redeploy trigger Wed Jun 17 11:45:47 WIB 2026
