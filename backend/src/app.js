@@ -10,19 +10,7 @@ const translateRoutes = require('./routes/translateRoutes');
 
 const app = express();
 
-app.get('/debug-env', (req, res) => {
-  const actual = process.env.FRONTEND_URL || '';
-  const expected = 'https://al-amin-technopark.vercel.app';
-  res.json({
-    actual,
-    expected,
-    matches: actual === expected,
-    actual_length: actual.length,
-    expected_length: expected.length,
-    actual_charCodes: actual.split('').map(c => c.charCodeAt(0)),
-    expected_charCodes: expected.split('').map(c => c.charCodeAt(0)),
-  });
-});
+
 
 const allowedOrigins = [
   process.env.FRONTEND_URL,
