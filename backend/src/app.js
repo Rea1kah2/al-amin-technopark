@@ -10,6 +10,15 @@ const translateRoutes = require('./routes/translateRoutes');
 
 const app = express();
 
+app.get('/debug-env', (req, res) => {
+  res.json({
+    FRONTEND_URL: JSON.stringify(process.env.FRONTEND_URL),
+    FRONTEND_URL_length: process.env.FRONTEND_URL ? process.env.FRONTEND_URL.length : 0, 
+    expected: 'https://alamin-technopark.vercel.app',
+    expected_length: 'https://al-amin-technopark.vercel.app'.length
+  });
+});
+
 const allowedOrigins = [
   process.env.FRONTEND_URL,
   'http://localhost:5173',
